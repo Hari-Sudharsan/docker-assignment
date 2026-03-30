@@ -28,8 +28,8 @@ pipeline {
                     passwordVariable: 'PASS'
                 )]) {
 
-                    sh 'echo $PASS | docker login -u $USER --password-stdin'
-                    sh 'docker push $DOCKER_IMAGE'
+                    sh 'echo $PASS | /usr/local/bin/docker login -u $USER --password-stdin'
+                    sh '/usr/local/bin/docker push $DOCKER_IMAGE'
                 }
             }
         }
