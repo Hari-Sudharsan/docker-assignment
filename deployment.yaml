@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: about-me-container
-        image: yourdockerhubusername/about-me-website:latest
+        image: sudharsan1289/about-me-website:latest
         ports:
         - containerPort: 80
 
